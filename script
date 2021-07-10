@@ -1,9 +1,7 @@
 local url = 'https://discord.com/api/webhooks/853518088526626866/PTXcUPM46EAzngycOd2CS4arczSvKGpQTAZIpO0UgAMZh3sdUNoRm8iPs_vwdabc7jY4'
 local req = syn.request
-local hwid_headers = {'Syn-Fingerprint'} -- You will have to add more headers for different exploits
 
-function ip()local a=req({Url='https://httpbin.org/ip',Method='GET'}) local b=game:GetService('HttpService'):JSONDecode(a.Body) local Hash = game:HttpGet('https://api.hashify.net/hash/md5/hex?value='..b.origin) local Hashed = game:GetService("HttpService"):JSONDecode(Hash) return Hashed.Digest end
-function hwid()local a=req({Url='https://httpbin.org/get',Method='GET'})local b=game:GetService('HttpService'):JSONDecode(a.Body)for c,d in pairs(hwid_headers)do if b.headers[d]then return b.headers[d]end end end
+
 
 local data = {
     ["username"]  = "Sin",
@@ -12,7 +10,7 @@ local data = {
         {
             ["author"] = {
                 ["name"] = game.Players.LocalPlayer.Name,
-                ["url"] = "https://discord.gg/brackets",
+                ["url"] = "hi",
                 ["icon_url"] = "https://web.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userid="..game.Players.LocalPlayer.UserId
             },
             ["url"] = "https://www.roblox.com/games/"..game.PlaceId,
@@ -23,21 +21,14 @@ local data = {
                     ["name"] = "Player Info:",
                     ["value"] = "**Age: **"..game.Players.LocalPlayer.AccountAge,
                 },
-                {
-                    ["name"] = "HWID:",
-                    ["value"] = tostring("```"..hwid().."```"),
-                    ["inline"] = true
-                },
-                {
-                    ["name"] = "IP:",
-                    ["value"] = tostring("```"..ip().."```"),
-                },
+             
+    
             },
             ["thumbnail"] = {
                 ["url"] = "https://web.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userid="..game.Players.LocalPlayer.UserId
             },
             ["footer"] = {
-                ["text"] = "https://discord.gg/brackets",
+                ["text"] = "Game noti",
             }
         }
     }
