@@ -4,35 +4,26 @@ local req = syn.request
 
 
 local data = {
-    ["username"]  = "Sin",
+    ["username"]  = "Windows X script users",
     ["avatar_url"] = "https://cdn.discordapp.com/attachments/761451509669822465/790927508127875102/Image_132.png",
     ["embeds"] = {
         {
             ["author"] = {
-                ["name"] = game.Players.LocalPlayer.Name,
-                ["url"] = "hi",
+                ["name"] = Game,
+                ["url"] = "https://discord.gg/brackets",
                 ["icon_url"] = "https://web.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userid="..game.Players.LocalPlayer.UserId
             },
             ["url"] = "https://www.roblox.com/games/"..game.PlaceId,
             ["description"] = game:GetService('MarketplaceService'):GetProductInfo(game.PlaceId).Name,
             ["color"] = 000000,
-            ["fields"] = {
-                {
-                    ["name"] = "Player Info:",
-                    ["value"] = "**Age: **"..game.Players.LocalPlayer.AccountAge,
-                },
-             
-    
-            },
+            
             ["thumbnail"] = {
                 ["url"] = "https://web.roblox.com/Thumbs/Avatar.ashx?x=100&y=100&Format=Png&userid="..game.Players.LocalPlayer.UserId
             },
             ["footer"] = {
-                ["text"] = "Game noti",
+                ["text"] = "Hi",
             }
         }
     }
 }
-
-
 local Post = req({Url = url,  Method = 'POST', Headers = { ['Content-Type'] = 'application/json' }, Body = game:GetService('HttpService'):JSONEncode(data)})
